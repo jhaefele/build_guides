@@ -36,7 +36,7 @@
 
 ### Install `firewalld` Service (Optional)
 
-The firewall service should be installed on the box as part of the STIG, but in the even it isn't (the command to open the port will fail), install it using the instructions further below.
+The firewall service should be installed on the box as part of the STIG, but in the event it isn't (the command to open the port will fail), you'll need to install it:
 
 1. `$ sudo install -y firewalld`
 1. `$ sudo systemctl start firewalld`
@@ -83,7 +83,7 @@ Our installation of Gogs will listen on port 8080. The local firewall must be op
         | Domain               | localhost                        |
         | SSH Port             | 22                               |
         | HTTP Port            | 8080                             |
-        | Application URL      | `http://gogs.domain.local:8080/` |
+        | Application URL      | `http://gogs.domain.local:8080/` |  
 
     * Optional Settings
         * Server and Other Services Settings
@@ -95,7 +95,8 @@ Our installation of Gogs will listen on port 8080. The local firewall must be op
             |-------------|------------------------------|
             | Username    | gogs-admin *(or as desired)* |
             | Password    | *IAW local SOP*              |
-            | Admin Email | gogs-admin@domain.local      |
+            | Admin Email | gogs-admin@domain.local      |  
+
     * Click **Install Gogs**
 
 ### Further Configuration
